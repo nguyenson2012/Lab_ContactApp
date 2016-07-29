@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:conntext="com.example.asus.lab_contactapp.EditAndCall">
+    <Button
+        android:id="@+id/btnEdit"
+        android:text="Edit"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  <LinearLayout
+      android:id="@+id/linername"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/btnEdit"
+      android:orientation="horizontal">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Name"/>
+      <EditText
+          android:id="@+id/edtName2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+  </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linerphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linername"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"/>
+        <EditText
+
+            android:id="@+id/edtPhone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_below="@+id/linerphone"
+        android:text="Call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnMessage"
+        android:layout_below="@+id/linerphone"
+        android:layout_alignParentRight="true"
+        android:text="Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
